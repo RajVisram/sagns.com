@@ -15,7 +15,7 @@ gulp.task("scss", function () {
   gulp.src("src/scss/main.scss")
     .pipe(sass({
       outputStyle : "compressed"
-    }))
+    }).on('error', sass.logError))
     .pipe(autoprefixer({
       browsers : ["last 20 versions"]
     }))

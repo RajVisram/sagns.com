@@ -1,7 +1,7 @@
 @import '_variables';
 @import '_mixins';
+@import '_type';
 // @import '_fonts';
-// @import '_type';
 // @import 'forms';
 
 * {
@@ -11,7 +11,61 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: $page-color;
+  color: $text-color;
   text-align: center;
-  background: $page-color;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: $accent-color;
+  border-bottom: solid 1px lighten($accent-color, 30%);
+
+  &:hover {
+    color: lighten($accent-color, 15%);
+    border-bottom: solid 1px $accent-color;
+  }
+
+}
+
+.container {
+
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  @include bp(narrow) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  @include bp(mid) {
+    width: 550px;
+    font-size: 1.1em;
+  }
+  @include bp(wide) {
+    width: 750px;
+    font-size: 1.2em;
+  }
+}
+
+ul {
+  list-style-position: inherit;
+  padding: 1em;
+}
+
+.nav {
+
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  li {
+    @include bp(narrow) {
+      display: inline;
+    }
+  }
+
 }
