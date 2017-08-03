@@ -1,4 +1,3 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
+baseURL = "https://sagns.netlify.com/"
 title = "St Albans Good Neighbour Scheme"
 theme = "sagns-simple"

@@ -33,7 +33,7 @@ gulp.task("watch", ["scss"], function () {
 // Run a complete build
 gulp.task("build", ["scss"], function () {
   del(["public"]);
-  return exec('hugo', function (err, stdout, stderr) {
+  return exec('hugo -v', function (err, stdout, stderr) {
     console.log(stdout); // See Hugo output
   });
 });
