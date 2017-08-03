@@ -20,7 +20,7 @@ gulp.task("scss", function () {
       browsers: ["last 20 versions"]
     }))
     .pipe(hash())
-    .pipe(gulp.dest("static/css"))
+    .pipe(gulp.dest("themes/sagns-simple/static/css"))
     .pipe(hash.manifest("hash.json"))
     .pipe(gulp.dest("data/css"))
 });
