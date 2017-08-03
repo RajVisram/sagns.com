@@ -5,7 +5,8 @@ title = "faq"
 
 +++
 
-Thinking of using the Scheme?
+## Thinking of using the Scheme?
+
 Q. Who can use the St Albans Good Neighbour Scheme?
 A. Anyone who is elderly, unwell, lonely, disabled or facing a crisis and living in the St Albans district.
 
@@ -23,7 +24,10 @@ A. We are unable to drive clients to London hospitals but we would hope to be ab
 
 Q. How often can I use the Scheme?
 A. Clients are usually limited to two requests for help a month, unless there are exceptional circumstances.
-Thinking of volunteering with the Scheme?
+
+
+## Thinking of volunteering with the Scheme?
+
 Q. How do I apply to be a Volunteer?
 A. You can print off our Application Form from our contact page or telephone our Helpline (01727) 830 713 to speak to a Duty Officer who will pass your details to our Membership Secretary.
 

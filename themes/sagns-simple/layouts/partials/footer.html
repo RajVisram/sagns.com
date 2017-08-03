@@ -1,9 +1,12 @@
 <footer>
-{{ partial "navigation.html" . }}
+  {{ partial "navigation.html" . }}
 
+  <div class="container">
+    <dl>
+      <dt>Company No:</dt><dd>3675149</dd>
+      <dt>Registered Charity No:</dt><dd>1074638</dd>
+    </dl>
 
-Company No: 3675149
-Registered Charity No:  1074638
-
-Copyright 2009 - {{ now.Year }}. All rights reserved
+    <p>Copyright 2009 - {{ now.Year }}. All rights reserved</p>
+  </div>
 </footer>
