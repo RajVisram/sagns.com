@@ -3,6 +3,8 @@ date: '2017-06-29T11:52:41+01:00'
 draft: false
 title: A Day in the Life of a Duty Officer
 ---
+## A Day in the Life of a Duty Officer
+
 #### 6 – 8 pm the previous evening
 
 The ‘portable office’ is delivered to my home.   This is two sports bags which contain all I will need the next day, including diary, Daybook, card indexes, stationery and general information.
@@ -32,4 +34,5 @@ I take the ‘portable office’ to tomorrow’s Duty Officer.   If I didn’t h
 A busy day but worthwhile – one person will be taken to the hospital, another to the dentist, one to visit her daughter, one will be taken shopping, one will shortly have their hedge cut, another will be introduced to a regular shopper and another will be contacted with a view to having a befriender visit them weekly for a chat and a cup of tea.
 
 All that is required is a friendly telephone manner, readable hand-writing (we are not yet fully computerised!) and a desire to help others who do not have family or good neighbour available to help them in a wide range of practical ways.    The help we provide really does make a difference to lives of residents of St Albans and District, is much appreciated by them, and only rarely are we unable to help.   Training is given to our new D.O.s and we have our own mobile telephone. If you can spare just one day a month – or quarter – to do this job from the comfort of your own home, please contact us direct on 01727 830 713 or download our application form below:-
+
 
