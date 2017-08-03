@@ -1,0 +1,4 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "St Albans Good Neighbour Scheme"
+theme = "sagns-simple"
