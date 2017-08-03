@@ -34,6 +34,11 @@ a:visited {
 
 }
 
+h1 > a:link,
+h1 > a:visited {
+   border-style: none
+}
+
 .container {
 
   text-align: left;
@@ -62,6 +67,8 @@ a:visited {
   list-style: none;
   padding-top: 1em;
   padding-bottom: 1em;
+  padding-left: 0em;
+  padding-right: 0em;
 
   li {
 
@@ -79,10 +86,11 @@ header {
 
   padding-top: 1em;
   padding-bottom: 3em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   font-size: 0.8em;
   background: linear-gradient(0deg, $theme-color, black);
   color: lighten($theme-color, 50%);
+  position: relative;
 
   a:link,
   a:visited {
@@ -94,6 +102,16 @@ header {
       border-bottom-color: lighten($theme-color, 80%)
     }
   }
+
+  .nav {
+
+    @include bp(mid) {
+      position: absolute;
+      bottom: 1em;
+      right: 1em;
+    }
+  }
+
 }
 
 

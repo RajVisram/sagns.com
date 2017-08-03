@@ -2,8 +2,13 @@
 date = "2017-06-29T11:52:41+01:00"
 draft = false
 title = "Home"
-
 +++
+
+
+## Welcome to the St Albans Good Neighbour Scheme
+
+The scheme is run entirely by volunteers and has been in operation since 1980.  If you need our help please call the number above and we will try to meet your request.
+
 
 ## A little about us
 
@@ -13,6 +18,7 @@ If you are a St Albans resident who is elderly, unwell, lonely, disabled or faci
 ## Our Services
 
 We may be able to provide help with :-
+
 - transport
 - shopping
 - befriending
