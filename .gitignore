@@ -1,3 +1,5 @@
-themes/minimo
 node_modules
 public
+static/
+data/**/hash.*
+themes/minimo
