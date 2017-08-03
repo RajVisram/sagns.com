@@ -3,8 +3,9 @@ backend:
   repo: philhawksworth/sagns.com
   branch: master
 
+
 media_folder: "static/images/uploads"
-public_folder: "/images/uploads"
+public_folder: "/images"
 
 collections:
   - name: "pages" # Used in routes, e.g., /admin/collections/blog
