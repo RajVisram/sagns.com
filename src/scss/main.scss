@@ -90,7 +90,6 @@ header {
   font-size: 0.8em;
   background: linear-gradient(0deg, $theme-color, black);
   color: lighten($theme-color, 50%);
-  position: relative;
 
   a:link,
   a:visited {
@@ -103,11 +102,15 @@ header {
     }
   }
 
+  .container {
+    position: relative;
+  }
+
   .nav {
 
     @include bp(mid) {
       position: absolute;
-      bottom: 1em;
+      bottom: -3em;
       right: 1em;
     }
   }
