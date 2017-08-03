@@ -1,9 +1,9 @@
-var gulp         = require("gulp");
-var sass         = require("gulp-sass");
+var gulp = require("gulp");
+var sass = require("gulp-sass");
 var autoprefixer = require("gulp-autoprefixer");
-var hash         = require("gulp-hash");
-var del          = require("del");
-
+var hash = require("gulp-hash");
+var del = require("del");
+var exec = require("child_process").exec;
 
 // Compile SCSS files to CSS
 gulp.task("scss", function () {
@@ -14,10 +14,10 @@ gulp.task("scss", function () {
   //compile hashed css files
   gulp.src("src/scss/main.scss")
     .pipe(sass({
-      outputStyle : "compressed"
+      outputStyle: "compressed"
     }).on('error', sass.logError))
     .pipe(autoprefixer({
-      browsers : ["last 20 versions"]
+      browsers: ["last 20 versions"]
     }))
     .pipe(hash())
     .pipe(gulp.dest("static/css"))
@@ -28,6 +28,14 @@ gulp.task("scss", function () {
 // Watch asset folder for changes
 gulp.task("watch", ["scss"], function () {
   gulp.watch("src/scss/**/*", ["scss"])
+});
+
+// Run a complete build
+gulp.task("build", ["scss"], function () {
+  del(["public"]);
+  return exec('hugo', function (err, stdout, stderr) {
+    console.log(stdout); // See Hugo output
+  });
 });
 
 
