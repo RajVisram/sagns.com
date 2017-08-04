@@ -3,6 +3,7 @@ date: '2017-06-29T11:52:41+01:00'
 draft: false
 title: volunteering
 ---
+> Our volunteers help to keep this service operating. Perhaps you'd like to join our team.
 
 # Volunteers can help in one or more of the following sections:-
 
@@ -23,5 +24,6 @@ New Drivers, Befrienders and Regular Shopping volunteers are required to have a 
 
 If you would like to talk to someone first, please telephone the scheme between 9am and 1pm every day on
 (01727) 830 713 alternatively you can download an application form below:-
+
 
 
