@@ -17,7 +17,7 @@ gulp.task("scss", function () {
       outputStyle: "compressed"
     }).on('error', sass.logError))
     .pipe(autoprefixer({
-      browsers: ["last 20 versions"]
+      browsers: ["last 10 versions"]
     }))
     .pipe(hash())
     .pipe(gulp.dest("themes/sagns-simple/static/css"))
