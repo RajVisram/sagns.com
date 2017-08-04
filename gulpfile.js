@@ -16,13 +16,13 @@ gulp.task("scss", function () {
     .pipe(sass({
       outputStyle: "compressed"
     }).on('error', sass.logError))
-    // .pipe(autoprefixer({
-    //   browsers: ["last 20 versions"]
-    // }))
-    // .pipe(hash())
+    .pipe(autoprefixer({
+      browsers: ["last 20 versions"]
+    }))
+    .pipe(hash())
     .pipe(gulp.dest("themes/sagns-simple/static/css"))
-    // .pipe(hash.manifest("hash.json"))
-    // .pipe(gulp.dest("data/css"))
+    .pipe(hash.manifest("hash.json"))
+    .pipe(gulp.dest("data/css"))
 });
 
 // Watch asset folder for changes
