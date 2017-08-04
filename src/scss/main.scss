@@ -107,25 +107,12 @@ header {
 }
 
 footer {
-
   margin-top: 4em;
   padding-top: 1em;
   padding-bottom: 3em;
   border-top: solid 1px $page-accent-color;
   color: darken($page-accent-color, 40%);
   font-size: 0.8em;
-
-
-  a:link,
-  a:visited {
-    color: lighten($theme-color, 70%);
-    border-bottom-color: lighten($theme-color, 50%);
-
-    &:hover {
-      color: lighten($theme-color, 100%);
-      border-bottom-color: lighten($theme-color, 80%)
-    }
-  }
 }
 
 a.cta-phone:link,
@@ -141,6 +128,12 @@ a.cta-phone:visited {
   font-weight: 400;
   background-color: $theme-color;
   color: $page-color;
-  border-bottom-color: darken($page-color, 10%);
-  border-bottom-width: 2px;
+  border-bottom-color: darken($page-color, 20%);
+  border-bottom-width: 1px;
+
+  &:hover,
+  &:focus {
+    background-color: lighten($theme-color, 10%);
+
+  }
 }
