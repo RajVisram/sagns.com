@@ -2,8 +2,9 @@
 date = "2017-06-29T11:52:41+01:00"
 draft = false
 title = "Home"
-tout = "If you are a St Albans resident who is elderly, unwell, lonely, disabled or facing a crisis and do not have family or a good neighbour, we may be able to help"
 +++
+
+> If you are a St Albans resident who is elderly, unwell, lonely, disabled or facing a crisis and do not have family or a good neighbour, we may be able to help
 
 ## Our Services
 

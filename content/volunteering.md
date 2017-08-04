@@ -4,6 +4,8 @@ draft: false
 title: volunteering
 ---
 
+
+
 # Volunteers can help in one or more of the following sections:-
 
 - [Duty Officers](/a-duty-officers-day) – process the telephone requests and find a suitable volunteer for the client.  The Duty Officers work from home and are usually on duty - one day per month, their office documentation and stationery fits into 2 holdalls which they transfer to the next day’s Duty Officer after office hours.
