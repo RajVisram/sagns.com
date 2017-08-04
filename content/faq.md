@@ -1,9 +1,9 @@
-+++
-date = "2017-06-29T11:52:41+01:00"
-draft = false
-title = "faq"
-
-+++
+---
+date: '2017-06-29T11:52:41+01:00'
+draft: false
+title: faq
+---
+> Common questions from those seeking assistance, or to volunteer their time.
 
 ## Thinking of using the Scheme?
 
@@ -45,3 +45,4 @@ A. Coffee mornings and tea parties are held for all volunteers, as well as an AG
 
 Q. Would I be required to raise money for the Scheme?
 A. No, our volunteers help people directly - one to one - by providing transport, doing shopping or odd jobs, befriending, etc.
+
