@@ -1,10 +1,10 @@
-+++
-date = "2017-06-29T11:52:41+01:00"
-draft = false
-title = "Home"
-+++
+---
+date: '2017-06-29T11:52:41+01:00'
+draft: false
+title: Home
+---
 
-> If you are a St Albans resident who is elderly, unwell, lonely, disabled or facing a crisis and do not have family or a good neighbour, we may be able to help
+> If you are a St Albans resident who is elderly, unwell, lonely, disabled or facing a crisis and do not have family or a good neighbour, we may be able to help.
 
 ## Our Services
 
@@ -51,4 +51,5 @@ visit a lonely person on a regular basis.
 To learn how you can become a volunteer, or to find out more about other ways you can help, please call us on <a href="tel:+441727830713">01727 830 713</a> between 9am and 1pm any day of the year.
 
 Alternatively, you can submit your details directly on this site and we will be in touch. Simply fill out our [volunteer contact form](/contact#volunteer)
+
 
