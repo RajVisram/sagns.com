@@ -2,7 +2,7 @@
 
 A website for a local charity organisation. (To replace http://sagns.org)
 
-Currently availble to view at [https://sagns.netlify.com]()
+Currently availble to view at [https://sagns.netlify.com](https://sagns.netlify.com)
 
 ## Maintaining this site
 
@@ -47,10 +47,10 @@ Builds typically take a few seconds and updates should udually be visible in the
 
 ## Hosting
 
-The live site is hosted on [Netlify](https://www.netlify.com) as a static web site and visible online at [https://sagns.netlify.com]().
+The live site is hosted on [Netlify](https://www.netlify.com) as a static web site and visible online at [https://sagns.netlify.com](https://sagns.netlify.com).
 
 Feature branches can be deployed on Netlify for testing. Any git branch pushed to this repository will become available for testing at `https://{BRANCH-NAME}--sagns.netlify.com`
 
-Source code for the site is hosted on Github at [https://github.com/philhawksworth/sagns.com]()
+Source code for the site is hosted on Github at [https://github.com/philhawksworth/sagns.com](https://github.com/philhawksworth/sagns.com)
 
 
