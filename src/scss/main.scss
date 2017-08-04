@@ -18,25 +18,33 @@ body {
 
 ul {
   list-style-position: inherit;
-  padding: 1em;
+  padding-left: 2em;
+  padding-right: 1em;
 }
 
 a:link,
 a:visited {
+
   text-decoration: none;
-  color: $accent-color;
-  border-bottom: solid 1px lighten($accent-color, 30%);
+  color: lighten($theme-color, 10%);
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: $page-accent-color;
 
   &:hover {
-    color: lighten($accent-color, 15%);
-    border-bottom: solid 1px $accent-color;
+    color: lighten($theme-color, 30%);
+    border-color: lighten($theme-color, 30%);
   }
 
 }
 
 h1 > a:link,
 h1 > a:visited {
-   border-style: none
+   border-style: none;
+
+  &:hover {
+  border-bottom-style: solid;
+  }
 }
 
 .container {
@@ -62,6 +70,16 @@ h1 > a:visited {
 
 }
 
+.summary {
+  border-top: solid 1px $page-accent-color;
+  border-bottom: solid 1px $page-accent-color;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
 .nav {
 
   list-style: none;
@@ -83,58 +101,44 @@ h1 > a:visited {
 }
 
 header {
-
   padding-top: 1em;
-  padding-bottom: 3em;
-  margin-bottom: 2em;
-  font-size: 0.8em;
-  background: linear-gradient(0deg, $theme-color, black);
-  color: lighten($theme-color, 50%);
-
-  a:link,
-  a:visited {
-    color: lighten($theme-color, 70%);
-    border-bottom-color: lighten($theme-color, 50%);
-
-    &:hover {
-      color: lighten($theme-color, 100%);
-      border-bottom-color: lighten($theme-color, 80%)
-    }
-  }
-
-  .container {
-    position: relative;
-  }
-
-  .nav {
-
-    @include bp(mid) {
-      position: absolute;
-      bottom: -3em;
-      right: 1em;
-    }
-  }
-
+  padding-bottom: 1em;
 }
 
+blockquote,
+.tout {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
 footer {
-
   margin-top: 4em;
-  padding-top: 1em;
+  padding-top: 3em;
   padding-bottom: 3em;
+  border-top: solid 1px $page-accent-color;
+  color: darken($page-accent-color, 40%);
   font-size: 0.8em;
+}
+
+a.cta-phone:link,
+a.cta-phone:visited {
+  display: inline-block;
+  margin-top: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  border-radius: 4px;
+  font-size: 1.1em;
+  font-weight: 400;
   background-color: $theme-color;
-  color: lighten($theme-color, 50%);
+  color: $page-color;
+  border-bottom-color: darken($page-color, 20%);
+  border-bottom-width: 1px;
 
-  a:link,
-  a:visited {
-    color: lighten($theme-color, 70%);
-    border-bottom-color: lighten($theme-color, 50%);
+  &:hover,
+  &:focus {
+    background-color: lighten($theme-color, 10%);
 
-    &:hover {
-      color: lighten($theme-color, 100%);
-      border-bottom-color: lighten($theme-color, 80%)
-    }
   }
 }
