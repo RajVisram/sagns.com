@@ -9,7 +9,7 @@ var exec = require("child_process").exec;
 gulp.task("scss", function () {
 
   //Delete our old css files
-  del(["static/css/**/*"])
+  del(["themes/sagns-simple/static/css/**/*"])
 
   //compile hashed css files
   gulp.src("src/scss/main.scss")
