@@ -1,4 +1,4 @@
 /node_modules
 /public
 /data/**/hash.*
-/themes/sagns-simple/static/css/*.css
+/static/css/*.css

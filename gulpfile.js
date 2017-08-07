@@ -9,7 +9,7 @@ var exec = require("child_process").exec;
 gulp.task("scss", function () {
 
   //Delete our old css files
-  del(["themes/sagns-simple/static/css/**/*"])
+  del(["static/css/**/*"])
 
   //compile hashed css files
   gulp.src("src/scss/main.scss")
@@ -20,7 +20,7 @@ gulp.task("scss", function () {
       browsers: ["last 10 versions"]
     }))
     .pipe(hash())
-    .pipe(gulp.dest("themes/sagns-simple/static/css"))
+    .pipe(gulp.dest("static/css"))
     .pipe(hash.manifest("hash.json"))
     .pipe(gulp.dest("data/css"))
 });
