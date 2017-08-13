@@ -4,6 +4,7 @@ var autoprefixer = require("gulp-autoprefixer");
 var hash = require("gulp-hash");
 var del = require("del");
 var exec = require("child_process").exec;
+var runSequence = require('run-sequence');
 
 // Compile SCSS files to CSS
 gulp.task("scss", function () {
@@ -22,7 +23,10 @@ gulp.task("scss", function () {
     .pipe(hash())
     .pipe(gulp.dest("static/css"))
     .pipe(hash.manifest("hash.json"))
-    .pipe(gulp.dest("data/css"))
+    .pipe(gulp.dest("data/css"));
+
+    console.log('CSS generated.');
+
 });
 
 // Watch asset folder for changes
@@ -30,12 +34,26 @@ gulp.task("watch", ["scss"], function () {
   gulp.watch("src/scss/**/*", ["scss"])
 });
 
-// Run a complete build
-gulp.task("build", ["scss"], function () {
-  del(["public"]);
-  return exec('hugo -v', function (err, stdout, stderr) {
+
+// Generate the site with Hugo
+gulp.task("generate", function () {
+  // del(["public"]);
+  console.log('Public directry cleaned.');
+  console.log('Commencing Hugo buoid...');
+  return exec('hugo', function (err, stdout, stderr) {
     console.log(stdout); // See Hugo output
   });
+});
+
+
+
+// Run a complete build
+gulp.task("build", function (cb) {
+  runSequence(
+    'scss',
+    'generate',
+    cb
+  );
 });
 
 
