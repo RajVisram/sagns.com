@@ -37,9 +37,9 @@ gulp.task("watch", ["scss"], function () {
 
 // Generate the site with Hugo
 gulp.task("generate", function () {
-  // del(["public"]);
+  del(["public"]);
   console.log('Public directry cleaned.');
-  console.log('Commencing Hugo buoid...');
+  console.log('Commencing Hugo build...');
   return exec('hugo', function (err, stdout, stderr) {
     console.log(stdout); // See Hugo output
   });
