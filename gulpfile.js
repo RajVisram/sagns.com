@@ -10,7 +10,8 @@ var runSequence = require('run-sequence');
 gulp.task("scss", function () {
 
   //Delete our old css files
-  del(["static/css/**/*"])
+  // del(["static/css/**/*"])
+  del(["themes/sagns-simple/static/css/**/*"])
 
   //compile hashed css files
   gulp.src("src/scss/main.scss")
@@ -21,9 +22,11 @@ gulp.task("scss", function () {
       browsers: ["last 10 versions"]
     }))
     .pipe(hash())
-    .pipe(gulp.dest("static/css"))
+    // .pipe(gulp.dest("static/css"))
+    .pipe(gulp.dest("themes/sagns-simple/static/css"))
     .pipe(hash.manifest("hash.json"))
     .pipe(gulp.dest("data/css"));
+
 
     console.log('CSS generated.');
 
@@ -38,7 +41,7 @@ gulp.task("watch", ["scss"], function () {
 // Generate the site with Hugo
 gulp.task("generate", function () {
   del(["public"]);
-  console.log('Public directry cleaned.');
+  console.log('Public directory cleaned.');
   console.log('Commencing Hugo build...');
   return exec('hugo', function (err, stdout, stderr) {
     console.log(stdout); // See Hugo output
