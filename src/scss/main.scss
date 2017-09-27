@@ -1,8 +1,7 @@
 @import '_variables';
 @import '_mixins';
 @import '_type';
-// @import '_fonts';
-// @import 'forms';
+
 
 * {
   margin:0;
@@ -139,6 +138,5 @@ a.cta-phone:visited {
   &:hover,
   &:focus {
     background-color: lighten($theme-color, 10%);
-
   }
 }
